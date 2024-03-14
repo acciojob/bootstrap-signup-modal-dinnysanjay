@@ -7,23 +7,40 @@
 		
 	</head>
 	<body>
-		<div>
-		    <button data-toggle=“modal” data-target=“#YourModalID” class="bg-danger modal">Sign Up</button>
-		</div>
-		<div class="modal">
-			<title>Create Account</title>
-			<form method="get">
-				<label for="email" class="form-control form-select">Email address</label>
-				<input type="email" class="form-control" placeholder="Enter email" required>
-				Your information is safe with us.
-				<label class="form-control form-select">Password</label>
-				<input type="password" required>
-				<label class="form-control form-select">Confirm Password</label>
-				<input type="password" placeholder="Confirm Password">
-				<button>Submit</button>
-				<button data-dismiss=“modal”></button>
-			</form>
-		</div>
+		<div class="modal fade" id="signupModal">
+          <div class="modal-dialog">
+             <div class="modal-content">
+                <div class="modal-header">
+                   <button type="button" class="close" data-dismiss="modal">&times;</button>
+                   <h4 class="modal-title">Create Account</h4>
+                </div>
+                    <div class="modal-body">
+                       <form>
+          <!-- form fields here -->
+						   <title>Create Account</title>
+			
+				           <label for="email" class="form-control form-select">Email address</label>
+				           <input type="email" class="form-control" placeholder="Enter email" required>
+				           Your information is safe with us.
+				           <label class="form-control form-select">Password</label>
+				           <input type="password" required>
+				           <label class="form-control form-select">Confirm Password</label>
+				           <input type="password" placeholder="Confirm Password">
+				           <button>Submit</button>
+				           <button data-dismiss=“modal”></button>
+			
+                       </form>
+                    </div>
+                    <div class="modal-footer">
+                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+           </div>
+      </div>
+		
+		
+			
+		
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	</body>

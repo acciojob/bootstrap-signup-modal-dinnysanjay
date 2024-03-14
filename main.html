@@ -8,20 +8,19 @@
 	</head>
 	<body>
 		<div class="modal fade" id="signupModal">
-          <div class="modal-dialog">
-             <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupModal">
-                  Sign Up
-                  </button>
-                   <h4 class="modal-title">Create Account</h4>
-                </div>
-                    <div class="modal-body">
-                       <form>
-          <!-- form fields here -->
-				           <label for="email" class="form-control form-select">Email address</label>
-				           <input type="email" class="form-control" placeholder="Enter email" required>
-				           Your information is safe with us.
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Create Account</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            <small>Your information is safe with us.</small>
+          </div>
 				           <label class="form-control form-select">Password</label>
 				           <input type="password" placeholder="Password" required>
 				           <label class="form-control form-select">Confirm Password</label>
